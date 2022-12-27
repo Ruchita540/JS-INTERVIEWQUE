@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- QUE1.  difference between == and === -->
+    <!-- === => strict equality
+    == => loose equality -->
+    <!-- 1.Both are the camparison operator they return boolean value
+    2.In == that that is used to compare only value 
+    3.Where as === is used to campare the value and datatype -->
+    <!-- Eg. var x="1234"
+        var y=1234
+        (x==y) =>True
+  if we gave,
+        (x===y) =>False -->
+
+<!-- QUE2.What is spread operator? -->
+<!-- The javascript spread operator (...) allows us to destructure the non-Primitive data types like arrays and objects to access the elements individually.
+
+Rest Operatpr
+The javascript spread operator (...) allows us to structure the non-Primitive data types like arrays and objects to access the elements individually. -->
+
+<!-- Que3. Difference between var, let and const.
+var => var is a global scoped means variable created using var keyword will be accessible globally it can be redeclared and reinitialized.
+
+let => let is a blocked scoped means variable created using let keyword will be accessible only in that specicific block where it has been declared It cannot be redeclared but it can be reinitialized.
+
+const => Const is a block scoped means variable created using const keyword will be accissible only specific block. It cannot be redeclared or reinitialized. -->
+
+<!-- QUE3.What is execution context?
+Each and every browser is having a JavaScript Engine, example Google is having V8 engine,
+Internet Explorer is having Chakra and Mozilla Firefox is having Spider Monkey.
+JS engine uses a Call stack and also creates a special environment to handle the execution of
+the JavaScript code. This environment is known as the Execution Context.
+The Execution Context contains the code that's currently running, and everything that aids in
+its execution.
+During the Execution Context run-time, the specific code gets parsed by a parser, the variables
+and functions are stored in memory, executable byte-code gets generated, and the code gets
+executed.
+There are two kinds of Execution Context in JavaScript:
+● Global Execution Context (GEC)
+● Function Execution Context (FEC -->
+
+<!-- The moment code gets executed GEC gets created and gets pushed to Call Stack. Inside the
+global or functional execution context, there are two phases : Memory allocation (Creation
+Phase) and Code execution (Execution Phase).
+Inside Memory allocation, the variables declared using var keyword get memory allocated as
+undefined in global scope and variables declared using let or const gets their memory allocated
+as undefined in block scope. -->
+
+<!--QUE4. WHAT IS MEANT BY FIRST CLSS FUNCTION -->
+<!-- A programming language is said to have First-class functions when functions in that language
+are treated like any other variable. For example, in such a language, a function can be passed as
+an argument to other functions, can be returned by another function and can be assigned as a
+value to a variable. -->
+
+<script src="./main.js"></script> 
+</body>
+</html>
