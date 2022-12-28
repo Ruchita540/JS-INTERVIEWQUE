@@ -114,8 +114,8 @@ invite.apply(emp2,["hey dude," ,"how are you!"])
 
 var inviteEmployee1=invite.bind(emp1);
 var inviteEmployee2=invite.bind(emp2);
-inviteEmploye1("hi","how are you")
-inviteEmploye2("hey","how are you doing?")
+inviteEmployee1("hi","how are you")
+inviteEmployee2("hey","how are you doing?")
 // Output:
 // hi John how are you
 // hey Smith how are you doing?
@@ -189,3 +189,27 @@ let person = {
 // Syntax: setTimeout(()=>{
 //        //code
 //        }, time);
+
+
+//prototypes:
+// function constructor 
+function Person(name, job, yearOfBirth){  
+       this.name= name; 
+       this.job= job; 
+       this.yearOfBirth= yearOfBirth; 
+      } 
+      Person.prototype.calculateAge= function(){ // how we use constructor 
+       console.log('The current age is: '+(2019- this.yearOfBirth)); 
+      } 
+      console.log(Person.prototype); 
+
+      // INHERITANCE IN JS
+
+      const parent = {
+       value: 2,
+       method() {
+         return this.value + 1;
+       }
+     };
+     
+     console.log(parent.method()); 

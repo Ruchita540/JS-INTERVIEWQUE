@@ -125,6 +125,34 @@ invoked inside the outer function to complete an action. Let's take a simple exa
 use callback function -->
 
 
+<!-- QUE.5 Explain prototypes -->
+<!-- Basicaly, Prototypes are mechanism by which objects can inherit properties from each other. JavaScript is a prototype based language, so, whenever we create a function using JavaScript, JavaS cript engine adds a prototype property inside a function, Prototype property is basically an object  (also known as Prototype object), where we can attach methods and properties in a prototype  object, which enables all the other objects to inherit these methods and properties. 
+Every object you created have __proto__ property will point to prototype property of constructor  
+function. -->
+
+
+<!-- QUE.6 What is prototype chain -->
+  
+<!-- Prototype:: An object's prototype ,object may also have a prototype object, which it inherits methods and properties from, and so on. This is often referred to as a prototype chain, and explains why different objects have properties and methods defined on other objects available to them. function Person(first, last, age, eyecolor) { this.firstName = first; this.lastName = last; this.age = age; this.eyeColor = eyecolor; }
+
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+console.log(myFather);
+console.log(myMother); -->
+
+<!-- Prototype chaining:: It is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.
+
+The prototype on object instance is available through Object.getPrototypeOf(object) or proto property whereas prototype on constructors function is available through Object.prototype.
+
+<img src="./Images/prototype_chain.png"alt ="Prototype Chain png"> -->
+
+<!-- QUE.7 Give an example of inheritance using function constructor -->
+
+<!-- An inherited function acts just as any other property, including property shadowing as shown above (in this case, a form of method overriding).
+
+When an inherited function is executed, the value of this points to the inheriting object, not to the prototype object where the function is an own property. -->
+
+
 <!-- <h1>DAY3 INTERVIEW QUESTIONS IN JS</h1> -->
 
 <!-- QUE1.How many operators do we have in JS ? -->
