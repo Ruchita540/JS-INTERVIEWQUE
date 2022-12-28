@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- <h1>DAY1 INTERVIEW QUESTION JS</h1> -->
     <!-- QUE1.  difference between == and === -->
     <!-- === => strict equality
     == => loose equality -->
@@ -58,6 +59,139 @@ as undefined in block scope. -->
 are treated like any other variable. For example, in such a language, a function can be passed as
 an argument to other functions, can be returned by another function and can be assigned as a
 value to a variable. -->
+
+<!-- QUE. WHAT ARE CLOSERS? -->
+
+<!-- A closure is the combination of a function bundled together (enclosed) with references to its
+surrounding state (the lexical environment). In other words, a closure gives you access to an
+outer function's scope from an inner function. In JavaScript, closures are created every time a
+function is created, at function creation time. -->
+
+<!-- QUE6.Explain call(), apply() and, bind() methods. -->
+
+<!-- These all three methods are used to invoke a function where we are supposed to pass an object
+as first argument and at the time of definition we don't have mention this object as a parameter
+and we can access the values of object by using this keyword in function definition.
+call(): The call() method invokes a function in which first argument will be the object and rest
+of the arguments required by function will be provided as an individual arguments. -->
+
+<!-- apply(): The apply() method invokes a function in which first argument will be the object and
+// rest of the arguments will be passed as an array of elements. -->
+
+<!-- bind: The bind() method returns a new function and this function will be having the reference
+ of the object passed, now whenever you want to use this returned function in the code you can
+ use it by passing rest of the arguments. -->
+
+
+
+ <!-- <h2>DAY2 INTERVIEW QUESTION JS</h2> -->
+
+ <!-- QUE1.What is creation phase and execution phase? -->
+
+ <!-- Compiler runs through the entire code for 2 time before actually executing the code, and
+generates a Global Execution context , inside this we have two phases creation phase and
+execution phase -->
+
+<!-- QUE2. What are objects in javascript? -->
+
+<!-- In JavaScript, an object is an unordered collection of key-value pairs. Each key-value pair is
+called a property.
+The key of a property can be a string. And the value of a property can be any value, e.g., a
+string, a number, an array, and even a function.
+JavaScript provides you with many ways to create an object. The most commonly used one is
+to use the object literal notation.
+The following example creates an empty object using the object literal notation:
+let empty = {};
+To create an object with properties, you use the key:value within the curly braces. For example,
+the following creates a new person object -->
+
+<!-- QUE3. What are constructor functions in JS? -->
+
+<!-- A constructor is a special function that creates and initializes an object instance of a class. In
+JavaScript, a constructor gets called when an object is created using the new keyword. We have
+multiple constructor functions like Function constructor for functions, Object constructor
+function for objects, Array constructor function for arrays.
+When a constructor gets invoked in JavaScript, the following sequence of operations take
+place:
+● A new empty object gets created.
+● The this keyword begins to refer to the new object and it becomes the current instance
+object.
+● The new object is then returned as the return value of the constructor -->
+
+
+<!-- QUE4.What are callbacks? -->
+<!-- A callback function is a function passed into another function as an argument. This function is
+invoked inside the outer function to complete an action. Let's take a simple example of how to
+use callback function -->
+
+
+<!-- <h1>DAY3 INTERVIEW QUESTIONS IN JS</h1> -->
+
+<!-- QUE1.How many operators do we have in JS ? -->
+
+<!-- We have 6 types of operators in JS they are
+1. Arithmetic Operators : + - * / %
+2. Comparison Operators : == === != !==
+3. Logical Operators : && || !
+4. Assignment Operators : =
+5. Conditional Operators
+6. Ternary Operator ?: -->
+
+<!-- QUE2.What are arrow functions? -->
+
+<!-- Arrow Functions — also called “fat arrow” functions, are relatively a new way of writing
+concise functions in JavaScript. They have been introduced by the ECMAScript 6
+specifications and since then become the most popular ES6 feature. Arrow functions allow us
+to use the fat arrow => operator to quickly define JavaScript functions, with or without
+parameters. We are able to omit the curly braces and the function and return keywords. -->
+
+<!-- QUE3.Difference between undefined vs not defined vs NaN -->
+
+<!-- Undefined
+undefined is a global variable that JavaScript creates at run time. JavaScript assigns undefined
+to any variable that has been declared but not initialized. In other words, in a case where no
+value has been explicitly assigned to the variable, JavaScript calls it undefined.
+null
+It is one of JavaScript’s primitive data type and is treated as falsy for boolean operations.null is
+an empty or non-existent value and null must be assigned. We use null when we want to
+explicitly declare that a variable is empty.
+not defined
+A not defined is a variable that is not declared inside the code at a given point of time with
+declaration keyword like var, let, or const. -->
+
+
+<!-- QUE4.What is callback hell? -->
+<!-- Callback Hell is a pattern with multiple nested callbacks which makes code hard to read and
+debug when dealing with asynchronous logic. The callback hell looks like a pyramid structure. -->
+
+<!-- QUE5.Please explain Self Invoking Function and its code ? -->
+<!-- IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it
+is defined and it is anonymous function. The signature of it would be as below,
+(function ()
+// logic here
+}
+)();
+The primary reason to use an IIFE is to obtain data privacy because any variables declared
+within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables with
+IIFE then it throws an error as below,
+(function ()
+{
+var message = "IIFE";
+console.log(message); //IIFE
+}
+)();
+console.log(message); //Error: message is not defined -->
+
+<!-- QUE6.What is the use of setTimeout? -->
+
+<!-- The setTimeout() is a method inside the window object, it calls the specified function or
+evaluates a JavaScript expression provided as a string after a given time period for only once.
+We all have used alarms or reminders several times, this setTimeout() method also has the
+same purpose in web applications. We use this to delay some kind of executions. -->
+
+<!-- Syntax: setTimeout(()=>{
+    //code
+    }, time); -->
 
 <script src="./main.js"></script> 
 </body>

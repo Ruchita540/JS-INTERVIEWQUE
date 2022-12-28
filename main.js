@@ -151,13 +151,41 @@ let person = {
        
   // ARROW FUNCTION
   
-   function expression
-   let x = function(x, y) {
-       return x * y;
-       }
-      // can be written as
-       // using arrow functions
-       let x = (x, y) => x * y;
-       
-
+//    function expression
+//    var x = function(x, y) {
+//        return x * y;
+//        }
+//       // can be written as
+//        // using arrow functions
+//        var x = (x, y) => x * y;
       
+       
+       // CALLBACK HELL
+       // async1(function(){
+       //        async2(function(){
+       //        async3(function(){
+       //        async4(function(){
+       //        ....
+       //        });
+       //        });
+       //        });
+       //        });
+
+ //SELF INOVOKING FUNCTION
+ 
+//  (function ()
+// // logic here
+// )();
+// (function ()
+// {
+// var message = "IIFE";
+// console.log(message); //IIFE
+// }
+// )();
+// console.log(message); //Error: message is not defined
+
+
+// SET TIME OUT 
+// Syntax: setTimeout(()=>{
+//        //code
+//        }, time);
